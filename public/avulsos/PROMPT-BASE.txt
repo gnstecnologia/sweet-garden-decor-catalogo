@@ -1,0 +1,19 @@
+PROMPT BASE — VASOS AVULSOS (anti-alteração de modelo)
+
+CRITICAL PRODUCT LOCK — REFERENCE IMAGE IS LAW.
+Copy the EXACT vase model from the reference: silhouette, proportions, rim, base, curvature, and finish.
+Do NOT redesign, reshape, slim, widen, round differently, or invent a new vase.
+Do NOT change proportions of rim, body curve, or base.
+
+TASK (isolado):
+Premium e-commerce catalog photo of ONE single empty floor vase only.
+REMOVE completely: all plants, leaves, stems, bark mulch, second vase, interior, people, labels.
+KEEP: only that exact empty vase, clean open circular mouth at top (empty interior, no soil/mulch).
+BACKGROUND: seamless soft light-gray studio (#EFEFEF), soft diffused catalog lighting,
+gentle contact shadow under the base, centered vertical product shot, no props, no text, no watermark.
+Style: clean premium home-decor catalog, photorealistic.
+
+TASK (tamanhos — só se houver variação):
+Same exact vase model/silhouette as reference, only scaled.
+Empty vases side by side on seamless light-gray studio, left→right smaller to larger.
+Identical finish. No plants, mulch, text, labels, interior.
