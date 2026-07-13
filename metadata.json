@@ -1,0 +1,6 @@
+{
+  "name": "Catálogo",
+  "description": "Catálogo de vasos e arranjos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
