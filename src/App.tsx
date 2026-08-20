@@ -50,17 +50,9 @@ const ImageCarousel = () => {
             className="flex-none w-64 h-80 bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden snap-center group relative cursor-pointer"
           >
             <img
-              src={encodeURI(src)}
+              src={src}
               alt={`Galeria ${index + 1}`}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                if (!target.dataset.triedFallback) {
-                  target.dataset.triedFallback = 'true';
-                  const base = src.substring(0, src.lastIndexOf('.'));
-                  target.src = encodeURI(`${base}.jpg`);
-                }
-              }}
             />
           </div>
         ))}

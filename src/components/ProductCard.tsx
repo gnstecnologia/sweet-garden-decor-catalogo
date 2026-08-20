@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Product, Variation } from '../types';
 import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -9,28 +9,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const SmartImage = ({ initialSrc, alt, className }: { initialSrc: string, alt: string, className: string }) => {
-  const [src, setSrc] = useState(initialSrc);
-  const [errorCount, setErrorCount] = useState(0);
-
-  useEffect(() => {
-    setSrc(encodeURI(initialSrc));
-    setErrorCount(0);
-  }, [initialSrc]);
-
-  const handleError = () => {
-    const base = initialSrc.substring(0, initialSrc.lastIndexOf('.'));
-    const extensions = ['.jpg', '.png', '.jpeg', '.JPG', '.PNG', '.JPEG', '.webp'];
-    
-    if (errorCount < extensions.length) {
-      setSrc(encodeURI(`${base}${extensions[errorCount]}`));
-      setErrorCount(prev => prev + 1);
-    } else {
-      // Fallback to a placeholder if everything fails
-      setSrc(`https://placehold.co/600x800/eeeeee/999999?text=${encodeURIComponent(alt)}`);
-    }
-  };
-
-  return <img src={src} alt={alt} className={className} onError={handleError} />;
+  return <img src={initialSrc} alt={alt} className={className} loading="lazy" />;
 };
 
 interface ProductCardProps {
