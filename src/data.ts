@@ -1,16 +1,15 @@
 import { Product } from './types';
 
 export const products: Product[] = [
-  // Row 1
   {
     id: '1',
     name: 'Modelo Cônico Slim',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 60x35cm e 80x35cm',
     imageUrls: [
-      '/catalog/conico-slim-avulso.png',
-      '/catalog/conico-slim-avulso-1.png',
-      '/catalog/conico-slim-2.jpg'
+      '/img/conico-slim-isolado.jpg',
+      '/img/conico-slim-tamanhos.jpg',
+      '/img/conico-slim-ambiente.jpg'
     ],
     variations: [
       { id: '1-p', name: 'P', price: 780 },
@@ -22,20 +21,15 @@ export const products: Product[] = [
     name: 'Modelo Amarílis',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 80x28cm',
-    imageUrls: ['/catalog/amarilis-avulso.jpeg', '/catalog/amarilis.png'],
-    variations: [
-      { id: '2-u', name: 'Único', price: 790 }
-    ]
+    imageUrls: ['/img/amarilis-isolado.jpg', '/img/amarilis-ambiente.jpg'],
+    variations: [{ id: '2-u', name: 'Único', price: 790 }]
   },
   {
     id: '4',
     name: 'Modelo Bali',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 70x48cm; 85x48cm; 1.07x48cm;',
-    imageUrls: [
-      '/catalog/bali-avulso.png',
-      '/catalog/bali.jpg'
-    ],
+    imageUrls: ['/img/bali-isolado.jpg', '/img/bali-tamanhos.jpg', '/img/bali-ambiente.jpg'],
     variations: [
       { id: '4-p', name: 'P', price: 1140 },
       { id: '4-m', name: 'M', price: 1550 },
@@ -47,28 +41,19 @@ export const products: Product[] = [
     name: 'Modelo Elegance',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 70x48cm; 8x480cm e 100x48cm.',
-    imageUrls: [
-      '/catalog/elegance-avulso.png',
-      '/catalog/elegance-avulso-1.png',
-      '/catalog/elegance.png'
-    ],
+    imageUrls: ['/img/elegance-isolado.jpg', '/img/elegance-tamanhos.jpg', '/img/elegance-ambiente.jpg'],
     variations: [
       { id: '3-p', name: 'P', price: 940 },
       { id: '3-m', name: 'M', price: 1000 },
       { id: '3-g', name: 'G', price: 1340 }
     ]
   },
-  // Row 2
   {
     id: '5',
     name: 'Modelo Aura Slim',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 40x35cm; 60x35cm e 80x45cm',
-    imageUrls: [
-      '/catalog/aura-slim-avulso.png',
-      '/catalog/aura-slim-avulso-2.png',
-      '/catalog/aura-slim.jpg'
-    ],
+    imageUrls: ['/img/aura-slim-isolado.jpg', '/img/aura-slim-tamanhos.jpg', '/img/aura-slim-ambiente.jpg'],
     variations: [
       { id: '5-p', name: 'P', price: 690 },
       { id: '5-m', name: 'M', price: 790 },
@@ -80,83 +65,63 @@ export const products: Product[] = [
     name: 'Modelo Tulipa',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 100x35cm',
-    imageUrls: ['/catalog/modelo-tulipa-avulso.png', '/catalog/tulipa.jpg'],
-    variations: [
-      { id: '11-u', name: 'Único', price: 980 }
-    ]
+    imageUrls: ['/img/tulipa-isolado.jpg', '/img/tulipa-ambiente.jpg'],
+    variations: [{ id: '11-u', name: 'Único', price: 980 }]
   },
   {
     id: '10',
     name: 'Modelo Cônico Fit',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 90x40cm',
-    imageUrls: ['/catalog/conico-fit-avulso.png', '/catalog/conico-fit.jpg'],
-    variations: [
-      { id: '10-u', name: 'Único', price: 990 }
-    ]
+    imageUrls: ['/img/conico-fit-isolado.jpg', '/img/conico-fit-ambiente.jpg'],
+    variations: [{ id: '10-u', name: 'Único', price: 990 }]
   },
   {
     id: '9',
     name: 'Modelo Cônico 70',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 70x45cm',
-    imageUrls: ['/catalog/conico-70-avulso.png', '/catalog/conico-70.png'],
-    variations: [
-      { id: '9-u', name: 'Único', price: 800 }
-    ]
+    imageUrls: ['/img/conico-70-isolado.jpg', '/img/conico-70-ambiente.jpg'],
+    variations: [{ id: '9-u', name: 'Único', price: 800 }]
   },
-  // Row 3
   {
     id: '14',
     name: 'Modelo Essence',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 120x40cm',
-    imageUrls: ['/catalog/essence-avulso-2.png', '/catalog/essence-avulso.png', '/catalog/essence.png'],
-    variations: [
-      { id: '14-u', name: 'Único', price: 1980 }
-    ]
+    imageUrls: ['/img/essence-isolado.jpg', '/img/essence-ambiente.jpg'],
+    variations: [{ id: '14-u', name: 'Único', price: 1980 }]
   },
   {
     id: '12',
     name: 'Modelo Pote',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 65x52cm',
-    imageUrls: ['/catalog/pote-avulso.png', '/catalog/pote.png'],
-    variations: [
-      { id: '12-u', name: 'Único', price: 1550 }
-    ]
+    imageUrls: ['/img/pote-isolado.jpg', '/img/pote-ambiente.jpg'],
+    variations: [{ id: '12-u', name: 'Único', price: 1550 }]
   },
   {
     id: '6',
     name: 'Modelo Barril',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 63x65cm',
-    imageUrls: ['/catalog/barril-avulso.png', '/catalog/barril.png'],
-    variations: [
-      { id: '6-u', name: 'Único', price: 960 }
-    ]
+    imageUrls: ['/img/barril-isolado.jpg', '/img/barril-ambiente.jpg'],
+    variations: [{ id: '6-u', name: 'Único', price: 960 }]
   },
   {
     id: '7',
     name: 'Modelo Bolinha',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 35x40cm',
-    imageUrls: ['/catalog/bolinha-avulso.png', '/catalog/bolinha.jpg'],
-    variations: [
-      { id: '7-u', name: 'Único', price: 840 }
-    ]
+    imageUrls: ['/img/bolinha-isolado.jpg', '/img/bolinha-ambiente.jpg'],
+    variations: [{ id: '7-u', name: 'Único', price: 840 }]
   },
-  // Row 4
   {
     id: '13',
     name: 'Modelo Mantova',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 80cmx40; 90x60cm e 125x75cm',
-    imageUrls: [
-      '/catalog/mantova-avulso.png',
-      '/catalog/mantova.jpg',
-      '/catalog/mantova2.jpg'
-    ],
+    imageUrls: ['/img/mantova-isolado.jpg', '/img/mantova-tamanhos.jpg', '/img/mantova-ambiente.jpg'],
     variations: [
       { id: '13-p', name: 'P', price: 1980 },
       { id: '13-m', name: 'M', price: 2200 },
@@ -168,10 +133,7 @@ export const products: Product[] = [
     name: 'Modelo Turim',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 80x60cm e 110x75cm',
-    imageUrls: [
-      '/catalog/turim-avulso.png',
-      '/catalog/turim.jpg'
-    ],
+    imageUrls: ['/img/turim-isolado.jpg', '/img/turim-tamanhos.jpg', '/img/turim-ambiente.jpg'],
     variations: [
       { id: '16-m', name: 'M', price: 2000 },
       { id: '16-g', name: 'G', price: 2800 }
@@ -182,10 +144,7 @@ export const products: Product[] = [
     name: 'Modelo Fênix',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 100x85cm e 120x85cm',
-    imageUrls: [
-      '/catalog/fenix-avulso.jpg',
-      '/catalog/fenix.png'
-    ],
+    imageUrls: ['/img/fenix-isolado.jpg', '/img/fenix-tamanhos.jpg', '/img/fenix-ambiente.jpg'],
     variations: [
       { id: '15-m', name: 'M', price: 2200 },
       { id: '15-g', name: 'G', price: 2800 }
@@ -196,26 +155,19 @@ export const products: Product[] = [
     name: 'Cônico Clássico',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 67x51; 71x61; 80x70',
-    imageUrls: [
-      '/catalog/conico-classico-avulso.png',
-      '/catalog/conico-classico.jpg'
-    ],
+    imageUrls: ['/img/conico-classico-isolado.jpg', '/img/conico-classico-tamanhos.jpg', '/img/conico-classico-ambiente.jpg'],
     variations: [
       { id: '18-p', name: 'P', price: 800 },
       { id: '18-m', name: 'M', price: 1100 },
       { id: '18-g', name: 'G', price: 1250 }
     ]
   },
-  // Row 5
   {
     id: '8',
     name: 'Modelo Bacia',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 45x10cm; 50x20cm; 56x25cm; 68x25cm; 82x25cm',
-    imageUrls: [
-      '/catalog/bacia-avulso.png',
-      '/catalog/bacias.png'
-    ],
+    imageUrls: ['/img/bacia-isolado.jpg', '/img/bacia-tamanhos.jpg', '/img/bacia-ambiente.jpg'],
     variations: [
       { id: '8-p', name: 'P', price: 790 },
       { id: '8-m', name: 'M', price: 800 },
@@ -229,10 +181,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Aura',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 60x46cm; 80x56cm',
-    imageUrls: [
-      '/catalog/conico-aura-avulso.jpeg',
-      '/catalog/conico-aura.png'
-    ],
+    imageUrls: ['/img/conico-fit-isolado.jpg', '/img/conico-fit-ambiente.jpg'],
     variations: [
       { id: '17-m', name: 'M', price: 980 },
       { id: '17-g', name: 'G', price: 1290 }
@@ -243,10 +192,7 @@ export const products: Product[] = [
     name: 'Modelo Gota',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 66x70cm e 70x78cm',
-    imageUrls: [
-      '/catalog/gota-avulso.png',
-      '/catalog/gota.png'
-    ],
+    imageUrls: ['/img/gota-isolado.jpg', '/img/gota-tamanhos.jpg', '/img/gota-ambiente.jpg'],
     variations: [
       { id: '19-m', name: 'M', price: 1450 },
       { id: '19-g', name: 'G', price: 1980 }
@@ -257,12 +203,9 @@ export const products: Product[] = [
     name: 'Modelo Bola',
     category: 'Vasos avulsos',
     description: 'Especificações Técnicas: 60x90cm',
-    imageUrls: ['/catalog/bola-avulso.png', '/catalog/bola.jpeg'],
-    variations: [
-      { id: '20-u', name: 'Único', price: 2340 }
-    ]
+    imageUrls: ['/img/bola-isolado.jpg', '/img/bola-ambiente.jpg'],
+    variations: [{ id: '20-u', name: 'Único', price: 2340 }]
   },
-  // Arranjos
   {
     id: '21',
     name: 'Modelo Pera com arranjo floral de orquídeas',
@@ -278,7 +221,7 @@ export const products: Product[] = [
     name: 'Modelo Íris com arranjo floral de orquídeas',
     category: 'Arranjos',
     description: 'Especificações Técnicas: 22X10cm; 27X10cm; 30x10cm',
-    imageUrls: ['/catalog/iris-g-1.jpg', '/catalog/iris-m-2.jpeg'],
+    imageUrls: ['/img/iris-g.jpg', '/img/iris-m.jpg'],
     variations: [
       { id: '22-p', name: 'P: 2 hastes', price: 490 },
       { id: '22-m', name: 'M: 6 hastes', price: 990 },
@@ -290,20 +233,16 @@ export const products: Product[] = [
     name: 'Modelo Pétala com arranjo de alecrim',
     category: 'Arranjos',
     description: 'Especificações Técnicas: 10x10',
-    imageUrls: ['/catalog/petala.png'],
-    variations: [
-      { id: '23-u', name: 'Único', price: 190 }
-    ]
+    imageUrls: ['/img/petala.jpg'],
+    variations: [{ id: '23-u', name: 'Único', price: 190 }]
   },
   {
     id: '24',
     name: 'Modelo Cereja com arranjo de orquídeas',
     category: 'Arranjos',
     description: 'Especificações Técnicas: 25x28cm',
-    imageUrls: ['/catalog/cereja.jpeg'],
-    variations: [
-      { id: '24-u', name: 'Único', price: 490 }
-    ]
+    imageUrls: ['/img/cereja.jpg'],
+    variations: [{ id: '24-u', name: 'Único', price: 490 }]
   },
   {
     id: '25',
@@ -311,7 +250,7 @@ export const products: Product[] = [
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/conico-slim-2.jpg'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '25-p', name: 'P', price: 1920 },
@@ -324,7 +263,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-conico-slim-com-ficus-lyrata-m.jpg'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '26-p', name: 'P', price: 2370 },
@@ -337,7 +276,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-conico-slim-com-bambu-japones-premium-m.png'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '27-p', name: 'P', price: 2980 },
@@ -350,7 +289,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-conico-slim-com-ravenala.jpg'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '28-p', name: 'P', price: 2170 },
@@ -363,7 +302,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-conico-slim-com-zamioculca-m.png'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '29-p', name: 'P', price: 0 },
@@ -376,11 +315,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/amarilis.png'],
+    imageUrls: ['/img/amarilis-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '30-u', name: 'Único', price: 1270 }
-    ]
+    variations: [{ id: '30-u', name: 'Único', price: 1270 }]
   },
   {
     id: '31',
@@ -388,11 +325,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/amarilis.png'],
+    imageUrls: ['/img/amarilis-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '31-u', name: 'Único', price: 2090 }
-    ]
+    variations: [{ id: '31-u', name: 'Único', price: 2090 }]
   },
   {
     id: '32',
@@ -400,11 +335,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/amarilis.png'],
+    imageUrls: ['/img/amarilis-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '32-u', name: 'Único', price: 2290 }
-    ]
+    variations: [{ id: '32-u', name: 'Único', price: 2290 }]
   },
   {
     id: '33',
@@ -412,7 +345,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/elegance.png'],
+    imageUrls: ['/img/elegance-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '33-p', name: 'P', price: 3140 },
@@ -426,7 +359,7 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-elegance-com-ficus-luxo.jpg'],
+    imageUrls: ['/img/elegance-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '34-p', name: 'P', price: 2530 },
@@ -440,11 +373,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/essence.png'],
+    imageUrls: ['/img/essence-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '35-u', name: 'Único', price: 3570 }
-    ]
+    variations: [{ id: '35-u', name: 'Único', price: 3570 }]
   },
   {
     id: '36',
@@ -452,11 +383,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/mais-vendidos-modelo-conico-fit-com-ficus-lyrata-g.jpg'],
+    imageUrls: ['/img/conico-fit-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '36-u', name: 'Único', price: 1570 }
-    ]
+    variations: [{ id: '36-u', name: 'Único', price: 1570 }]
   },
   {
     id: '37',
@@ -464,11 +393,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/conico-fit.jpg'],
+    imageUrls: ['/img/conico-fit-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '37-u', name: 'Único', price: 2130 }
-    ]
+    variations: [{ id: '37-u', name: 'Único', price: 2130 }]
   },
   {
     id: '38',
@@ -476,11 +403,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/tulipa.jpg'],
+    imageUrls: ['/img/tulipa-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '38-u', name: 'Único', price: 2370 }
-    ]
+    variations: [{ id: '38-u', name: 'Único', price: 2370 }]
   },
   {
     id: '39',
@@ -488,11 +413,9 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/tulipa.jpg'],
+    imageUrls: ['/img/tulipa-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '39-u', name: 'Único', price: 2570 }
-    ]
+    variations: [{ id: '39-u', name: 'Único', price: 2570 }]
   },
   {
     id: '40',
@@ -500,10 +423,8 @@ Até 5x sem juros nos cartões de crédito`,
     category: 'Mais vendidos',
     description: `Entrega, montagem e acabamentos incluídos (Para a cidade de Manaus/Am) Enviamos para todo o Brasil.
 Até 5x sem juros nos cartões de crédito`,
-    imageUrls: ['/catalog/tulipa.jpg'],
+    imageUrls: ['/img/tulipa-ambiente.jpg'],
     isBestSeller: true,
-    variations: [
-      { id: '40-u', name: 'Único', price: 1570 }
-    ]
+    variations: [{ id: '40-u', name: 'Único', price: 1570 }]
   }
 ];
