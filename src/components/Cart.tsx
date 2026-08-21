@@ -43,7 +43,7 @@ export const Cart: React.FC<CartProps> = ({ isOpen, onClose, items, onUpdateQuan
                       <img
                         src={item.product.imageUrls[0]}
                         alt={item.product.name}
-                        className="w-full h-full object-contain mix-blend-multiply"
+                        className="w-full h-full object-contain bg-white"
                       />
                     ) : (
                       <div className="w-full h-full bg-gray-100" />

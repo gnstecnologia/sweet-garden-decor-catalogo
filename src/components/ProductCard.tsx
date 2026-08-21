@@ -47,7 +47,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
             <SmartImage
               initialSrc={images[currentImageIndex]}
               alt={product.name}
-              className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 ease-out"
+              className="w-full h-full object-contain bg-white transition-transform duration-700 ease-out"
             />
             {images.length > 1 && (
               <>
