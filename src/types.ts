@@ -10,6 +10,7 @@ export interface Product {
   category: string;
   description: string;
   variations: Variation[];
+  defaultVariationId?: string;
   imageUrls?: string[];
   isBestSeller?: boolean;
   imageFit?: 'contain' | 'cover' | 'fill';

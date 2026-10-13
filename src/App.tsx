@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { ShoppingBag, Search, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ProductCard } from './components/ProductCard';
 import { Cart } from './components/Cart';
-import { products } from './data';
+import { collectionImages, products } from './data';
 import { CartItem, Product, Variation } from './types';
 
 const ImageCarousel = () => {
-  // Collect all unique images from products for the carousel
-  const allImages = Array.from(new Set(products.flatMap(p => p.imageUrls || []))).filter(Boolean);
+  const allImages = collectionImages;
 
   if (allImages.length === 0) return null;
 
@@ -141,13 +140,13 @@ export default function App() {
                 onClick={() => setCategory('Vasos avulsos')}
                 className={`flex items-center justify-center px-4 py-2.5 rounded-xl font-medium transition-colors whitespace-nowrap ${category === 'Vasos avulsos' ? 'bg-gray-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
               >
-                Vasos Avulsos
+                Vasos avulsos
               </button>
               <button
                 onClick={() => setCategory('Arranjos')}
                 className={`flex items-center justify-center px-4 py-2.5 rounded-xl font-medium transition-colors whitespace-nowrap ${category === 'Arranjos' ? 'bg-[#00A86B] text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
               >
-                Arranjos
+                Arranjos e pendentes
               </button>
             </div>
             

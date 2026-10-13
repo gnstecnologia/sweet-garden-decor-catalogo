@@ -18,7 +18,9 @@ interface ProductCardProps {
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
-  const [selectedVariation, setSelectedVariation] = useState<Variation>(product.variations[0]);
+  const [selectedVariation, setSelectedVariation] = useState<Variation>(
+    () => product.variations.find((variation) => variation.id === product.defaultVariationId) || product.variations[0]
+  );
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = product.imageUrls || [];
@@ -84,11 +86,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
       </div>
 
       <div className="p-5 flex flex-col flex-1">
-        <div className="flex items-start justify-between gap-4 mb-4">
+        <div className="flex items-start justify-between gap-4 mb-3">
           <h3 className="text-base font-bold text-gray-900 leading-tight uppercase">
             {product.name}
           </h3>
         </div>
+
+        {product.description ? (
+          <p className="text-sm text-gray-600 leading-snug mb-4">{product.description}</p>
+        ) : null}
 
         <div className="flex flex-col mt-auto">
           <div className="flex flex-col gap-2 mb-6">
@@ -118,13 +124,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
             )}
           </div>
 
-          <p className="text-[10px] text-gray-500 text-center mb-5 px-2">
-            {product.category === 'Arranjos'
-              ? '* Valores referentes aos vasos com arranjos. Valores sujeitos à alterações conforme a variação de quantitativo de hastes florais ou folhagens.'
-              : '* Valores referentes aos vasos avulsos sem plantas.'}
-          </p>
-
-          <div className="flex gap-3 mb-6">
+          <div className="flex gap-3">
             <button
               onClick={() => {
                 const text = `Olá! Gostaria de solicitar um orçamento para o vaso ${product.name} (Tamanho: ${selectedVariation.name}).`;
@@ -143,25 +143,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }
             </button>
           </div>
 
-          <div className="text-center">
-            {product.description?.includes('Especificações Técnicas') ? (
-              <div className="relative group inline-block">
-                <span className="text-gray-500 text-[9px] tracking-wider uppercase cursor-help border-b border-dashed border-gray-400 pb-0.5 hover:text-gray-700 hover:border-gray-600 transition-colors">
-                  Especificações Técnicas
-                </span>
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-20 whitespace-nowrap">
-                  <div className="bg-gray-900 text-white text-xs py-1.5 px-3 rounded-md shadow-lg relative">
-                    Dim: {product.description.replace(/Especificações Técnicas:\s*/i, '').replace(/cm/gi, '').trim()}
-                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-gray-900 transform rotate-45"></div>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <span className="text-gray-500 text-[9px] tracking-wider uppercase whitespace-pre-line">
-                {product.description}
-              </span>
-            )}
-          </div>
+          {product.category === 'Arranjos' ? (
+            <p className="text-[10px] text-gray-500 text-center mt-4 px-2">
+              * Valores referentes aos vasos com arranjos. Valores sujeitos à alterações conforme a variação de quantitativo de hastes florais ou folhagens.
+            </p>
+          ) : product.category === 'Vasos avulsos' ? (
+            <p className="text-[10px] text-gray-500 text-center mt-4 px-2">
+              * Valores referentes aos vasos avulsos sem plantas.
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
