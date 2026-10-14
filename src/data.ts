@@ -287,7 +287,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Bambu Semi Artificial',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-bambu-japones-premium.jpg'],
+    imageUrls: ['/img/conico-slim-bambu-semi.png'],
     isBestSeller: true,
     defaultVariationId: '25-m',
     variations: [
@@ -300,7 +300,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Fícus Lyrata M artificial',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-ambiente.jpg'],
+    imageUrls: ['/img/conico-slim-ficus-lyrata.jpg'],
     isBestSeller: true,
     variations: [
       { id: '26-p', name: 'P', price: 2370 },
@@ -312,7 +312,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Bambu Japonês Premium M',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-ambiente.jpg'],
+    imageUrls: ['/img/conico-slim-bambu-japones-sala.png'],
     isBestSeller: true,
     variations: [
       { id: '27-p', name: 'P', price: 2980 },
@@ -324,7 +324,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Ravenala Artificial',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-ambiente.jpg'],
+    imageUrls: ['/img/conico-slim-ravenala.jpg'],
     isBestSeller: true,
     variations: [
       { id: '28-p', name: 'P', price: 2170 },
