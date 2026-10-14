@@ -1,7 +1,35 @@
 import { Product } from './types';
 
-/** Fotos de vasos juntos. A faixa "Nossa coleção" só aparece quando esta lista tiver itens. */
-export const collectionImages: string[] = [];
+/** Fotos de vasos juntos enviadas para a faixa "Nossa coleção". */
+export const collectionImages: string[] = [
+  '/img/colecao/colecao-p1.jpg',
+  '/img/colecao/colecao-p1.png',
+  '/img/colecao/colecao-p2-jfif.jpg',
+  '/img/colecao/colecao-p2.jpg',
+  '/img/colecao/colecao-p3.jpg',
+  '/img/colecao/colecao-p11.jpg',
+  '/img/colecao/colecao-p12.jpg',
+  '/img/colecao/colecao-p20.jpg',
+  '/img/colecao/colecao-p22.jpg',
+  '/img/colecao/colecao-p24.jpg',
+  '/img/colecao/colecao-01.jpg',
+  '/img/colecao/colecao-02.jpg',
+  '/img/colecao/colecao-03.jpg',
+  '/img/colecao/colecao-04.jpg',
+  '/img/colecao/colecao-05.jpg',
+  '/img/colecao/colecao-06.jpg',
+  '/img/colecao/colecao-07.jpg',
+  '/img/colecao/colecao-08.jpg',
+  '/img/colecao/colecao-09.jpg',
+  '/img/colecao/colecao-10.jpg',
+  '/img/colecao/colecao-11.jpg',
+  '/img/colecao/colecao-12.jpg',
+  '/img/colecao/colecao-13.jpg',
+  '/img/colecao/colecao-14.png',
+  '/img/colecao/colecao-15.jpg',
+  '/img/colecao/colecao-16.jpg',
+  '/img/colecao/colecao-17.jpg'
+];
 
 export const products: Product[] = [
   {
@@ -259,7 +287,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Bambu Semi Artificial',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-ambiente.jpg'],
+    imageUrls: ['/img/conico-slim-bambu-japones-premium.jpg'],
     isBestSeller: true,
     defaultVariationId: '25-m',
     variations: [
@@ -284,7 +312,7 @@ export const products: Product[] = [
     name: 'Modelo Cônico Slim com Bambu Japonês Premium M',
     category: 'Mais vendidos',
     description: '',
-    imageUrls: ['/img/conico-slim-bambu-japones-premium.jpg'],
+    imageUrls: ['/img/conico-slim-ambiente.jpg'],
     isBestSeller: true,
     variations: [
       { id: '27-p', name: 'P', price: 2980 },
